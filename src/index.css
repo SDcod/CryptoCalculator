@@ -1,13 +1,143 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(34, 32, 32);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.App {
+  min-height: 100vh;
+
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.currency_converter {
+  margin: 2rem;
+  width: 70vw;
+
+  color: white;
+  background-image: url(./crypto.jpg);
+  /* Photo by David McBee from Pexels */
+  background-size: cover;
+  padding: 3rem;
+  border-radius: 25px;
+  border: 2px solid rgb(199, 195, 195);
+  box-shadow: 0px 10px 15px rgb(15, 15, 15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.converter {
+  border: 2px solid wheat;
+  width: max-content;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: rgb(52, 53, 52);
+  box-shadow: 0px 10px 15px rgb(15, 15, 15);
+}
+.currency_input {
+  border: 1px solid white;
+  border-radius: 20px;
+  color: rgb(28, 88, 10);
+  font-size: 14px;
+  padding: 0.3rem;
+  font-weight: 600;
+  background-color: aliceblue;
+  margin: 0.6rem;
+}
+.currency_input:focus {
+  outline: none;
+}
+
+.currency-option {
+  padding: 0.2rem;
+  border-radius: 15px;
+}
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+#convert_btn {
+  border: 1px solid white;
+  width: 125px;
+  border-radius: 25px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+#convert_btn:hover {
+  background-color: rgb(56, 54, 54);
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  font-weight: 700;
+}
+.exchange_rate {
+  border: 2px solid wheat;
+  width: 60%;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: rgb(37, 36, 36);
+  box-shadow: 0px 10px 15px rgb(15, 15, 15);
+}
+
+.currency_title {
+  font-size: 20px;
+}
+
+.crypto_title {
+  font-family: "Trebuchet MS", sans-serif;
+  color: rgb(230, 57, 57);
+  letter-spacing: 6px;
+  border-bottom: 2px solid rgb(253, 247, 247);
+}
+
+.ctoc {
+  color: rgb(95, 143, 127);
+}
+
+.heading_title {
+  color: rgb(246, 246, 252);
+}
+
+.news_feed {
+  width: 80vw;
+  margin: 1rem;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsLink {
+  color: rgb(202, 211, 211);
+  text-decoration: none;
+  margin: 0.5rem;
+}
+.newsLink:hover {
+  color: rgb(95, 116, 236);
+  text-decoration: none;
 }
