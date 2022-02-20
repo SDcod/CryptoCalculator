@@ -31,7 +31,6 @@ const CurrencyConverter = () => {
       .request(options)
       .then((response) => {
         setResult(response.data * amount);
-        console.log(response.data * amount);
 
         setExchangedData({
           primaryCurrency: chosenPrimaryCurrency,
